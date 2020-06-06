@@ -1,0 +1,219 @@
+Script started on 2018-09-27 11:16:47-06:00
+]0;jasmine.roebuck1@csa2:~/CPSC355/Assignment1jasmine.roebuck1@csa2:~/CPSC355/Assignment1$ gdb assign1a.out
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1a.out...done.
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) btest[K[K[K[K test
+Breakpoint 1 at 0x4005d0: file assign1a.s, line 20.
+(gdb) r
+Starting program: /home/ugc/jasmine.roebuck1/CPSC355/Assignment1/assign1a.out 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) ni
+21		b.gt	done			// finished loop
+1: x/i $pc
+=> 0x4005d4 <test+4>:	b.gt	0x400624 <done>
+(gdb) ni
+23		mul	x24, x23, x23		// x * x
+1: x/i $pc
+=> 0x4005d8 <test+8>:	mul	x24, x23, x23
+(gdb) p $x24
+$1 = 0
+(gdb) no[Ki
+24		mul	x25, x23, x24		// y = x * x^2
+1: x/i $pc
+=> 0x4005dc <test+12>:	mul	x25, x23, x24
+(gdb) p $x24
+$2 = 36
+(gdb) ni
+25		mul	x25, x25, x20		// y = y * -5
+1: x/i $pc
+=> 0x4005e0 <test+16>:	mul	x25, x25, x20
+(gdb) p $x25
+$3 = -216
+(gdb) ni
+26		mul	x26, x21, x24		// 31 * x^2
+1: x/i $pc
+=> 0x4005e4 <test+20>:	mul	x26, x21, x24
+(gdb) p $x25
+$4 = 1080
+(gdb) ni
+27		sub	x25, x25, x26		// y = y - 31x^2
+1: x/i $pc
+=> 0x4005e8 <test+24>:	sub	x25, x25, x26
+(gdb) $[Kp $x25[K6
+$5 = 1116
+(gdb) ni
+28		mul	x26, x23, x22		// x * 4
+1: x/i $pc
+=> 0x4005ec <test+28>:	mul	x26, x23, x22
+(gdb) p $x25
+$6 = -36
+(gdb) ni
+29		add	x25, x25, x26		// y = y + 4x
+1: x/i $pc
+=> 0x4005f0 <test+32>:	add	x25, x25, x26
+(gdb) p $x26
+$7 = -24
+(gdb) ni
+30		add	x25, x25, x21		// y = y + 31
+1: x/i $pc
+=> 0x4005f4 <test+36>:	add	x25, x25, x21
+(gdb) p $x25
+$8 = -60
+(gdb) ni
+32		cmp	x25, x19		// compare y with current max
+1: x/i $pc
+=> 0x4005f8 <test+40>:	cmp	x25, x19
+(gdb) p $x25
+$9 = -29
+(gdb) ni
+33		b.le	next			// if y <= max, skip next line
+1: x/i $pc
+=> 0x4005fc <test+44>:	b.le	0x400604 <next>
+(gdb) ni
+34		mov	x19, x25		// set y as new max
+1: x/i $pc
+=> 0x400600 <test+48>:	mov	x19, x25
+(gdb) ni
+next () at assign1a.s:36
+36	next:	adrp	x0, fmt			// printing results
+1: x/i $pc
+=> 0x400604 <next>:	adrp	x0, 0x400000
+(gdb) p $x25
+$10 = -29
+(gdb) p $x19
+$11 = -29
+(gdb) ni
+37		add	x0, x0, :lo12:fmt	// get string address
+1: x/i $pc
+=> 0x400608 <next+4>:	add	x0, x0, #0x594
+(gdb) c
+Continuing.
+x = -6	 y =   -29	 max = -29
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x = -5	 y =  -139	 max = -29
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x = -4	 y =  -161	 max = -29
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x = -3	 y =  -125	 max = -29
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x = -2	 y =   -61	 max = -29
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x = -1	 y =     1	 max =   1
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x =  0	 y =    31	 max =  31
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x =  1	 y =    -1	 max =  31
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x =  2	 y =  -125	 max =  31
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x =  3	 y =  -371	 max =  31
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x =  4	 y =  -769	 max =  31
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+x =  5	 y = -1349	 max =  31
+
+Breakpoint 1, test () at assign1a.s:20
+20	test:	cmp	x23, 5			// x <= 5
+1: x/i $pc
+=> 0x4005d0 <test>:	cmp	x23, #0x5
+(gdb) c
+Continuing.
+[Inferior 1 (process 4483) exited with code 035]
+(gdb) q
+]0;jasmine.roebuck1@csa2:~/CPSC355/Assignment1jasmine.roebuck1@csa2:~/CPSC355/Assignment1$ exit
+exit
+
+Script done on 2018-09-27 11:20:42-06:00

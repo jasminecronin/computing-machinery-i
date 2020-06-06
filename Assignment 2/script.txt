@@ -1,0 +1,309 @@
+Script started on 2018-10-12 13:14:44-06:00
+]0;jasmine.roebuck1@csa2:~/CPSC355/Assignment2jasmine.roebuck1@csa2:~/CPSC355/Assignment2$ gdb assign2a.out
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign2a.out...done.
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) b top
+Breakpoint 1 at 0x40066c: file assign2a.s, line 52.
+(gdb) r
+Starting program: /home/ugc/jasmine.roebuck1/CPSC355/Assignment2/assign2a.out 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+Multiplier = 0x00000046 (70) 	 Multiplicand = 0xfefefefe (-16843010)
+
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$1 = 70
+(gdb) p $w21
+$2 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$3 = 35
+(gdb) p $w21
+$4 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p w[K$w19
+$5 = 17
+(gdb) p $w21
+$6 = 4286545791
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$7 = 2147483656
+(gdb) $[Kp$[K $w21
+$8 = 4282335038
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$9 = 1073741828
+(gdb) p $w21
+$10 = 4288651167
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$11 = 2684354562
+(gdb) p $w21
+$12 = 4291809231
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$13 = 3489660929
+(gdb) p $w21
+$14 = 4293388263
+(gdb) p[Kc
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$15 = 2537553920
+(gdb) p $w21
+$16 = 4294679451
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$17 = 3703177216
+(gdb) p $w21
+$18 = 4294958300
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$19 = 3873820672
+(gdb) p $w21
+$20 = 4294967014
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) p $w19
+$21 = 926363264
+(gdb) p $w21
+$22 = 4294967287
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 1, top () at assign2a.s:52
+52	top:	tst	w19, 0x1			// test if bit-0 in w19 == 1
+1: x/i $pc
+=> 0x40066c <top>:	tst	w19, #0x1
+(gdb) c
+Continuing.
+Product = 0xffffffff 	 Multiplier = 0xb9b9b974
+64-bit results = 0xffffffffb9b9b974 (-1179010700)
+[Inferior 1 (process 20485) exited normally]
+(gdb) q
+]0;jasmine.roebuck1@csa2:~/CPSC355/Assignment2jasmine.roebuck1@csa2:~/CPSC355/Assignment2$ exit
+exit
+
+Script done on 2018-10-12 13:17:42-06:00

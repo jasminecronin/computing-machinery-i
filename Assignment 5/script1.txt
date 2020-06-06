@@ -1,0 +1,261 @@
+Script started on 2018-11-30 09:34:30-07:00
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ mak[K[K[K./a5a
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 1
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  1 <-- head of queue <-- tail of queue
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 2
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 3
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  1 <-- head of queue
+  2
+  3 <-- tail of queue
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 1
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 4
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  2 <-- head of queue
+  3
+  4 <-- tail of queue
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 5
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 6
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 7
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 8
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 9
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  2 <-- head of queue
+  3
+  4
+  5
+  6
+  7
+  8
+  9 <-- tail of queue
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive integer value to be enqueued: 10
+
+Queue overflow! Cannot enqueue into a full queue.
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Current queue contents:
+  2 <-- head of queue
+  3
+  4
+  5
+  6
+  7
+  8
+  9 <-- tail of queue
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 2
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 3
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 4
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 5
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 6
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 7
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 8
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Dequeued value is 9
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty queue
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 2
+
+Queue underflow! Cannot dequeue from an empty queue.
+
+Press the return key to continue . . . 
+[3J[H[2J### Queue Operations ###
+
+Press 1 - Enqueue, 2 - Dequeue, 3 - Display, 4 - Exit
+Your option? 4
+
+Terminating program
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ exit
+exit
+
+Script done on 2018-11-30 09:35:49-07:00

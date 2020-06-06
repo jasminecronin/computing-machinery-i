@@ -1,0 +1,17 @@
+Script started on 2018-11-30 09:36:34-07:00
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ ./a5ab[K[Kb.out 
+Error: Too few arguments.
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ ./a5ab.[K[K[Kb.out 1
+Error: Too few arguments.
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ ./a5a[Kb.out 30 30
+Error: Input not valid for date format.
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ ./a5b.out 1 1
+January 1st is Winter
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ ./5[Ka5b.u[Kout 9 21
+September 21st is Fall
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ ./a5b.u[Kout 6 22
+June 22nd is Summer
+]0;jasmine.roebuck1@csa3:~/CPSC355/Assignment5jasmine.roebuck1@csa3:~/CPSC355/Assignment5$ exit
+exit
+
+Script done on 2018-11-30 09:37:46-07:00
